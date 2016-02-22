@@ -1,11 +1,159 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="MML-Ex-2T7">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Timer-->
+        <scene sceneID="ecE-4V-Gro">
+            <objects>
+                <viewController id="MLR-sF-XLc" customClass="TimerViewController" customModule="Project01_Timer" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="W5Y-ry-ml7"/>
+                        <viewControllerLayoutGuide type="bottom" id="MzS-YY-U74"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="QPP-jD-tQx">
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" text="30.0" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="sI7-Bt-8d7" userLabel="tfTimer">
+                                <rect key="frame" x="-25" y="-30" width="97" height="30"/>
+                                <color key="backgroundColor" red="0.61586442261822705" green="0.89524269104003906" blue="0.70907287355925908" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="AvenirNextCondensed-Bold" family="Avenir Next Condensed" pointSize="100"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dle-FZ-4hk">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <color key="backgroundColor" red="0.55613781123201" green="0.82863168727639835" blue="0.89524269104003906" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="35"/>
+                                <state key="normal" title="Pause"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="25"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="buttonPauseTouch:" destination="MLR-sF-XLc" eventType="touchUpInside" id="e8O-bB-9tR"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZaT-nq-HZC">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <color key="backgroundColor" red="0.60503926701570676" green="0.40866345484467664" blue="0.60339991047618191" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="55"/>
+                                <state key="normal" title="Reset"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="45"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="buttonResetTouch:" destination="MLR-sF-XLc" eventType="touchUpInside" id="Vbz-8Q-shT"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Prr-Yr-MOx">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <color key="backgroundColor" red="0.55613781123201" green="0.82863168727639835" blue="0.89524269104003906" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="35"/>
+                                <state key="normal" title="Start"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="25"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="buttonStartTouch:" destination="MLR-sF-XLc" eventType="touchUpInside" id="1wf-Sx-rRW"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Prr-Yr-MOx" firstAttribute="leading" secondItem="QPP-jD-tQx" secondAttribute="leading" constant="8" id="BYz-2J-iUe"/>
+                            <constraint firstItem="Prr-Yr-MOx" firstAttribute="height" secondItem="sI7-Bt-8d7" secondAttribute="height" id="D58-Dw-K9m"/>
+                            <constraint firstAttribute="trailing" secondItem="ZaT-nq-HZC" secondAttribute="trailing" constant="8" id="DtL-K1-AqH"/>
+                            <constraint firstAttribute="trailing" secondItem="sI7-Bt-8d7" secondAttribute="trailing" constant="8" id="MZG-hs-XLN"/>
+                            <constraint firstItem="sI7-Bt-8d7" firstAttribute="top" secondItem="W5Y-ry-ml7" secondAttribute="bottom" constant="8" id="N9c-bc-WoR"/>
+                            <constraint firstItem="sI7-Bt-8d7" firstAttribute="leading" secondItem="QPP-jD-tQx" secondAttribute="leading" constant="8" id="TuP-gl-gm1"/>
+                            <constraint firstItem="Dle-FZ-4hk" firstAttribute="leading" secondItem="Prr-Yr-MOx" secondAttribute="trailing" constant="8" id="WTt-WJ-Kt1"/>
+                            <constraint firstItem="ZaT-nq-HZC" firstAttribute="leading" secondItem="QPP-jD-tQx" secondAttribute="leading" constant="8" id="Xj2-mQ-fQr"/>
+                            <constraint firstItem="ZaT-nq-HZC" firstAttribute="top" secondItem="Prr-Yr-MOx" secondAttribute="bottom" constant="8" id="bSF-cY-XOh"/>
+                            <constraint firstItem="Prr-Yr-MOx" firstAttribute="top" secondItem="sI7-Bt-8d7" secondAttribute="bottom" constant="8" id="bs8-cQ-S5Y"/>
+                            <constraint firstItem="ZaT-nq-HZC" firstAttribute="height" secondItem="sI7-Bt-8d7" secondAttribute="height" id="duZ-8P-a6n"/>
+                            <constraint firstItem="Dle-FZ-4hk" firstAttribute="width" secondItem="Prr-Yr-MOx" secondAttribute="width" id="mzS-Z4-7X3"/>
+                            <constraint firstAttribute="trailing" secondItem="Dle-FZ-4hk" secondAttribute="trailing" constant="8" id="sed-5e-WaJ"/>
+                            <constraint firstItem="Dle-FZ-4hk" firstAttribute="height" secondItem="Prr-Yr-MOx" secondAttribute="height" id="szV-eM-9Fy"/>
+                            <constraint firstItem="MzS-YY-U74" firstAttribute="top" secondItem="ZaT-nq-HZC" secondAttribute="bottom" constant="8" id="ugd-dF-pWM"/>
+                            <constraint firstItem="Dle-FZ-4hk" firstAttribute="top" secondItem="sI7-Bt-8d7" secondAttribute="bottom" constant="8" id="z36-vL-LkC"/>
+                            <constraint firstItem="Dle-FZ-4hk" firstAttribute="leading" secondItem="Prr-Yr-MOx" secondAttribute="trailing" constant="8" id="zft-81-VTb"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="sI7-Bt-8d7"/>
+                                <exclude reference="Dle-FZ-4hk"/>
+                                <exclude reference="ZaT-nq-HZC"/>
+                                <exclude reference="Prr-Yr-MOx"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="MZG-hs-XLN"/>
+                                <exclude reference="N9c-bc-WoR"/>
+                                <exclude reference="TuP-gl-gm1"/>
+                                <exclude reference="BYz-2J-iUe"/>
+                                <exclude reference="D58-Dw-K9m"/>
+                                <exclude reference="bs8-cQ-S5Y"/>
+                                <exclude reference="WTt-WJ-Kt1"/>
+                                <exclude reference="mzS-Z4-7X3"/>
+                                <exclude reference="sed-5e-WaJ"/>
+                                <exclude reference="szV-eM-9Fy"/>
+                                <exclude reference="z36-vL-LkC"/>
+                                <exclude reference="zft-81-VTb"/>
+                                <exclude reference="DtL-K1-AqH"/>
+                                <exclude reference="Xj2-mQ-fQr"/>
+                                <exclude reference="bSF-cY-XOh"/>
+                                <exclude reference="duZ-8P-a6n"/>
+                                <exclude reference="ugd-dF-pWM"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="sI7-Bt-8d7"/>
+                                <include reference="Dle-FZ-4hk"/>
+                                <include reference="ZaT-nq-HZC"/>
+                                <include reference="Prr-Yr-MOx"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="MZG-hs-XLN"/>
+                                <include reference="N9c-bc-WoR"/>
+                                <include reference="TuP-gl-gm1"/>
+                                <include reference="BYz-2J-iUe"/>
+                                <include reference="D58-Dw-K9m"/>
+                                <include reference="bs8-cQ-S5Y"/>
+                                <include reference="WTt-WJ-Kt1"/>
+                                <include reference="mzS-Z4-7X3"/>
+                                <include reference="sed-5e-WaJ"/>
+                                <include reference="szV-eM-9Fy"/>
+                                <include reference="z36-vL-LkC"/>
+                                <include reference="zft-81-VTb"/>
+                                <include reference="DtL-K1-AqH"/>
+                                <include reference="Xj2-mQ-fQr"/>
+                                <include reference="bSF-cY-XOh"/>
+                                <include reference="duZ-8P-a6n"/>
+                                <include reference="ugd-dF-pWM"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Timer" id="rbI-w5-OGS"/>
+                    <connections>
+                        <outlet property="buttonPause" destination="Dle-FZ-4hk" id="TY0-Bb-fq0"/>
+                        <outlet property="buttonReset" destination="ZaT-nq-HZC" id="naX-G8-M0e"/>
+                        <outlet property="buttonStart" destination="Prr-Yr-MOx" id="yzc-CC-Z8a"/>
+                        <outlet property="tfText" destination="sI7-Bt-8d7" id="Fro-rL-3z1"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YFj-Wi-0f3" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1125" y="810"/>
+        </scene>
+        <!--Stopwatch-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Project01_Timer" customModuleProvider="target" sceneMemberID="viewController">
@@ -26,11 +174,9 @@
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rla-BP-y4P" userLabel="Start">
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
-                                <color key="backgroundColor" red="1" green="0.50789334335415659" blue="0.68078965399002522" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" red="1" green="0.82981716869652256" blue="0.96270213330801102" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="35"/>
-                                <state key="normal" title="Start">
-                                    <color key="titleColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                </state>
+                                <state key="normal" title="Start"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
                                         <integer key="value" value="30"/>
@@ -40,29 +186,11 @@
                                     <action selector="buttonStartTouch:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6E0-jn-HOw"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" reversesTitleShadowWhenHighlighted="YES" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v4j-gN-pvq" userLabel="Reset">
-                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
-                                <color key="backgroundColor" red="0.72126301076356147" green="0.61905053716705161" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="49"/>
-                                <state key="normal" title="Reset">
-                                    <color key="titleColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                </state>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                        <integer key="value" value="50"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                                <connections>
-                                    <action selector="buttonResetTouch:" destination="BYZ-38-t0r" eventType="touchUpInside" id="tQH-H2-EBl"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jo1-8d-Tpy" userLabel="Stop">
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
-                                <color key="backgroundColor" red="0.48911335947067947" green="0.83656160156055148" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" red="1" green="0.82981716869652256" blue="0.96270213330801102" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="35"/>
-                                <state key="normal" title="Pause">
-                                    <color key="titleColor" red="1" green="0.50789334340000003" blue="0.68078965400000002" alpha="1" colorSpace="calibratedRGB"/>
-                                </state>
+                                <state key="normal" title="Pause"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
                                         <integer key="value" value="30"/>
@@ -70,6 +198,20 @@
                                 </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="buttonStopTouch:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hsD-Dz-bjF"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" reversesTitleShadowWhenHighlighted="YES" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v4j-gN-pvq" userLabel="Reset">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <color key="backgroundColor" red="1" green="0.83746761322940722" blue="0.71216143436685742" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="49"/>
+                                <state key="normal" title="Reset"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="50"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="buttonResetTouch:" destination="BYZ-38-t0r" eventType="touchUpInside" id="tQH-H2-EBl"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -97,8 +239,8 @@
                             <mask key="subviews">
                                 <exclude reference="Bx6-xw-tE3"/>
                                 <exclude reference="Rla-BP-y4P"/>
-                                <exclude reference="v4j-gN-pvq"/>
                                 <exclude reference="jo1-8d-Tpy"/>
+                                <exclude reference="v4j-gN-pvq"/>
                             </mask>
                             <mask key="constraints">
                                 <exclude reference="e2Q-hR-6S1"/>
@@ -124,8 +266,8 @@
                             <mask key="subviews">
                                 <include reference="Bx6-xw-tE3"/>
                                 <include reference="Rla-BP-y4P"/>
-                                <include reference="v4j-gN-pvq"/>
                                 <include reference="jo1-8d-Tpy"/>
+                                <include reference="v4j-gN-pvq"/>
                             </mask>
                             <mask key="constraints">
                                 <include reference="e2Q-hR-6S1"/>
@@ -148,6 +290,7 @@
                             </mask>
                         </variation>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Stopwatch" id="jih-ef-pvf"/>
                     <connections>
                         <outlet property="buttonReset" destination="v4j-gN-pvq" id="D3x-uk-POT"/>
                         <outlet property="buttonStart" destination="Rla-BP-y4P" id="3z7-mr-PNB"/>
@@ -157,7 +300,25 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="207" y="298"/>
+            <point key="canvasLocation" x="1125" y="96"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="VQn-qe-3MC">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="MML-Ex-2T7" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="3sR-PD-W5b">
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="3aW-xQ-574"/>
+                        <segue destination="MLR-sF-XLc" kind="relationship" relationship="viewControllers" id="4Ma-cv-rjs"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dE3-Ic-Tbs" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-57" y="410"/>
         </scene>
     </scenes>
 </document>

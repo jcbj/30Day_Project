@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Project01_Timer" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0.0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bx6-xw-tE3" userLabel="Text">
+                                <rect key="frame" x="-42" y="-21" width="42" height="21"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" name="AvenirNextCondensed-Bold" family="Avenir Next Condensed" pointSize="100"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rla-BP-y4P" userLabel="Start">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <color key="backgroundColor" red="1" green="0.50789334335415659" blue="0.68078965399002522" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="35"/>
+                                <state key="normal" title="Start">
+                                    <color key="titleColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="30"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="buttonStartTouch:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6E0-jn-HOw"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" reversesTitleShadowWhenHighlighted="YES" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v4j-gN-pvq" userLabel="Reset">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <color key="backgroundColor" red="0.72126301076356147" green="0.61905053716705161" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="49"/>
+                                <state key="normal" title="Reset">
+                                    <color key="titleColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="50"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="buttonResetTouch:" destination="BYZ-38-t0r" eventType="touchUpInside" id="tQH-H2-EBl"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jo1-8d-Tpy" userLabel="Stop">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <color key="backgroundColor" red="0.48911335947067947" green="0.83656160156055148" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="35"/>
+                                <state key="normal" title="Pause">
+                                    <color key="titleColor" red="1" green="0.50789334340000003" blue="0.68078965400000002" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="30"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="buttonStopTouch:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hsD-Dz-bjF"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="v4j-gN-pvq" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="8" id="ExX-N4-Otz"/>
+                            <constraint firstItem="Rla-BP-y4P" firstAttribute="top" secondItem="v4j-gN-pvq" secondAttribute="bottom" constant="8" id="LKr-Db-Eim"/>
+                            <constraint firstAttribute="trailing" secondItem="Bx6-xw-tE3" secondAttribute="trailing" constant="8" id="QXS-Cd-WIq"/>
+                            <constraint firstItem="Bx6-xw-tE3" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="UYf-K5-nOm"/>
+                            <constraint firstItem="jo1-8d-Tpy" firstAttribute="top" secondItem="v4j-gN-pvq" secondAttribute="bottom" constant="8" id="VVp-Di-1lo"/>
+                            <constraint firstAttribute="trailing" secondItem="v4j-gN-pvq" secondAttribute="trailing" constant="8" id="Xgj-di-f45"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="jo1-8d-Tpy" secondAttribute="bottom" constant="8" id="e2Q-hR-6S1"/>
+                            <constraint firstItem="jo1-8d-Tpy" firstAttribute="leading" secondItem="Rla-BP-y4P" secondAttribute="trailing" constant="8" id="gZZ-0L-WgJ"/>
+                            <constraint firstItem="jo1-8d-Tpy" firstAttribute="width" secondItem="Rla-BP-y4P" secondAttribute="width" id="jG0-so-haU"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Rla-BP-y4P" secondAttribute="bottom" constant="8" id="jte-Lq-vyu"/>
+                            <constraint firstItem="v4j-gN-pvq" firstAttribute="height" secondItem="Bx6-xw-tE3" secondAttribute="height" id="q5B-Qj-5OD"/>
+                            <constraint firstItem="jo1-8d-Tpy" firstAttribute="leading" secondItem="Rla-BP-y4P" secondAttribute="trailing" constant="8" id="qb8-xV-rcI"/>
+                            <constraint firstItem="Rla-BP-y4P" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="8" id="vuo-wh-PPt"/>
+                            <constraint firstItem="Bx6-xw-tE3" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="8" id="wCa-ph-zTe"/>
+                            <constraint firstItem="Rla-BP-y4P" firstAttribute="height" secondItem="Bx6-xw-tE3" secondAttribute="height" id="wbz-cZ-s1t"/>
+                            <constraint firstAttribute="trailing" secondItem="jo1-8d-Tpy" secondAttribute="trailing" constant="8" id="xiW-zs-Ass"/>
+                            <constraint firstItem="v4j-gN-pvq" firstAttribute="top" secondItem="Bx6-xw-tE3" secondAttribute="bottom" constant="8" id="yHg-93-hpe"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="Bx6-xw-tE3"/>
+                                <exclude reference="Rla-BP-y4P"/>
+                                <exclude reference="v4j-gN-pvq"/>
+                                <exclude reference="jo1-8d-Tpy"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="e2Q-hR-6S1"/>
+                                <exclude reference="jte-Lq-vyu"/>
+                                <exclude reference="LKr-Db-Eim"/>
+                                <exclude reference="vuo-wh-PPt"/>
+                                <exclude reference="wbz-cZ-s1t"/>
+                                <exclude reference="VVp-Di-1lo"/>
+                                <exclude reference="gZZ-0L-WgJ"/>
+                                <exclude reference="jG0-so-haU"/>
+                                <exclude reference="qb8-xV-rcI"/>
+                                <exclude reference="xiW-zs-Ass"/>
+                                <exclude reference="ExX-N4-Otz"/>
+                                <exclude reference="Xgj-di-f45"/>
+                                <exclude reference="q5B-Qj-5OD"/>
+                                <exclude reference="yHg-93-hpe"/>
+                                <exclude reference="QXS-Cd-WIq"/>
+                                <exclude reference="UYf-K5-nOm"/>
+                                <exclude reference="wCa-ph-zTe"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="Bx6-xw-tE3"/>
+                                <include reference="Rla-BP-y4P"/>
+                                <include reference="v4j-gN-pvq"/>
+                                <include reference="jo1-8d-Tpy"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="e2Q-hR-6S1"/>
+                                <include reference="jte-Lq-vyu"/>
+                                <include reference="LKr-Db-Eim"/>
+                                <include reference="vuo-wh-PPt"/>
+                                <include reference="wbz-cZ-s1t"/>
+                                <include reference="VVp-Di-1lo"/>
+                                <include reference="gZZ-0L-WgJ"/>
+                                <include reference="jG0-so-haU"/>
+                                <include reference="qb8-xV-rcI"/>
+                                <include reference="xiW-zs-Ass"/>
+                                <include reference="ExX-N4-Otz"/>
+                                <include reference="Xgj-di-f45"/>
+                                <include reference="q5B-Qj-5OD"/>
+                                <include reference="yHg-93-hpe"/>
+                                <include reference="QXS-Cd-WIq"/>
+                                <include reference="UYf-K5-nOm"/>
+                                <include reference="wCa-ph-zTe"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="buttonReset" destination="v4j-gN-pvq" id="D3x-uk-POT"/>
+                        <outlet property="buttonStart" destination="Rla-BP-y4P" id="3z7-mr-PNB"/>
+                        <outlet property="buttonStop" destination="jo1-8d-Tpy" id="U16-1I-wgR"/>
+                        <outlet property="labelText" destination="Bx6-xw-tE3" id="64n-pQ-qeJ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="207" y="298"/>
+        </scene>
+    </scenes>
+</document>

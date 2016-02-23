@@ -14,15 +14,9 @@
                         <viewControllerLayoutGuide type="bottom" id="MzS-YY-U74"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="QPP-jD-tQx">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" text="30.0" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="sI7-Bt-8d7" userLabel="tfTimer">
-                                <rect key="frame" x="-25" y="-30" width="97" height="30"/>
-                                <color key="backgroundColor" red="0.61586442261822705" green="0.89524269104003906" blue="0.70907287355925908" alpha="1" colorSpace="calibratedRGB"/>
-                                <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" name="AvenirNextCondensed-Bold" family="Avenir Next Condensed" pointSize="100"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dle-FZ-4hk">
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
                                 <color key="backgroundColor" red="0.55613781123201" green="0.82863168727639835" blue="0.89524269104003906" alpha="1" colorSpace="calibratedRGB"/>
@@ -65,6 +59,13 @@
                                     <action selector="buttonStartTouch:" destination="MLR-sF-XLc" eventType="touchUpInside" id="1wf-Sx-rRW"/>
                                 </connections>
                             </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" text="30.0" borderStyle="roundedRect" textAlignment="center" minimumFontSize="50" translatesAutoresizingMaskIntoConstraints="NO" id="sI7-Bt-8d7" userLabel="tfTimer">
+                                <rect key="frame" x="-25" y="-30" width="97" height="30"/>
+                                <color key="backgroundColor" red="0.61586442261822705" green="0.89524269104003906" blue="0.70907287355925908" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="AvenirNextCondensed-DemiBold" family="Avenir Next Condensed" pointSize="100"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -88,56 +89,56 @@
                         </constraints>
                         <variation key="default">
                             <mask key="subviews">
-                                <exclude reference="sI7-Bt-8d7"/>
                                 <exclude reference="Dle-FZ-4hk"/>
                                 <exclude reference="ZaT-nq-HZC"/>
                                 <exclude reference="Prr-Yr-MOx"/>
+                                <exclude reference="sI7-Bt-8d7"/>
                             </mask>
                             <mask key="constraints">
+                                <exclude reference="ugd-dF-pWM"/>
                                 <exclude reference="MZG-hs-XLN"/>
                                 <exclude reference="N9c-bc-WoR"/>
                                 <exclude reference="TuP-gl-gm1"/>
-                                <exclude reference="BYz-2J-iUe"/>
-                                <exclude reference="D58-Dw-K9m"/>
-                                <exclude reference="bs8-cQ-S5Y"/>
                                 <exclude reference="WTt-WJ-Kt1"/>
                                 <exclude reference="mzS-Z4-7X3"/>
                                 <exclude reference="sed-5e-WaJ"/>
                                 <exclude reference="szV-eM-9Fy"/>
                                 <exclude reference="z36-vL-LkC"/>
                                 <exclude reference="zft-81-VTb"/>
+                                <exclude reference="BYz-2J-iUe"/>
+                                <exclude reference="D58-Dw-K9m"/>
+                                <exclude reference="bs8-cQ-S5Y"/>
                                 <exclude reference="DtL-K1-AqH"/>
                                 <exclude reference="Xj2-mQ-fQr"/>
                                 <exclude reference="bSF-cY-XOh"/>
                                 <exclude reference="duZ-8P-a6n"/>
-                                <exclude reference="ugd-dF-pWM"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
                             <mask key="subviews">
-                                <include reference="sI7-Bt-8d7"/>
                                 <include reference="Dle-FZ-4hk"/>
                                 <include reference="ZaT-nq-HZC"/>
                                 <include reference="Prr-Yr-MOx"/>
+                                <include reference="sI7-Bt-8d7"/>
                             </mask>
                             <mask key="constraints">
+                                <include reference="ugd-dF-pWM"/>
                                 <include reference="MZG-hs-XLN"/>
                                 <include reference="N9c-bc-WoR"/>
                                 <include reference="TuP-gl-gm1"/>
-                                <include reference="BYz-2J-iUe"/>
-                                <include reference="D58-Dw-K9m"/>
-                                <include reference="bs8-cQ-S5Y"/>
                                 <include reference="WTt-WJ-Kt1"/>
                                 <include reference="mzS-Z4-7X3"/>
                                 <include reference="sed-5e-WaJ"/>
                                 <include reference="szV-eM-9Fy"/>
                                 <include reference="z36-vL-LkC"/>
                                 <include reference="zft-81-VTb"/>
+                                <include reference="BYz-2J-iUe"/>
+                                <include reference="D58-Dw-K9m"/>
+                                <include reference="bs8-cQ-S5Y"/>
                                 <include reference="DtL-K1-AqH"/>
                                 <include reference="Xj2-mQ-fQr"/>
                                 <include reference="bSF-cY-XOh"/>
                                 <include reference="duZ-8P-a6n"/>
-                                <include reference="ugd-dF-pWM"/>
                             </mask>
                         </variation>
                     </view>

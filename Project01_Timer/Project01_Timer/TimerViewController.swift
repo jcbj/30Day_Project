@@ -2,6 +2,9 @@
 //  TimerViewController.swift
 //  Project01_Timer
 //
+//  定时器开始的数字输入没加判断
+//  UITextField设置的大字体sb中有效果，实际运行没有效果，还是很小的字
+//
 //  Created by jiangchao on 16/2/22.
 //  Copyright © 2016年 jiangchao. All rights reserved.
 //
@@ -39,7 +42,7 @@ class TimerViewController: UIViewController {
     
     @IBAction func buttonStartTouch(sender: AnyObject) {
         if !self.isPlay {
-            
+            //string to double -> NSString
             let value:NSString = NSString(string: self.tfText.text!)
             self.count = value.doubleValue
             
@@ -80,16 +83,17 @@ class TimerViewController: UIViewController {
     }
     
     func updateTimerText() {
-        if !self.isPlay {
-            return
-        }
         
-        if self.isPause {
+        guard self.isPlay && !self.isPause else {
             return
         }
         
         self.count -= 0.1
         self.updateTfText()
+        
+        if 0 == Int(self.count * 10) {
+            self.buttonResetTouch(self.buttonReset)
+        }
     }
     
     func updateTfText() {

@@ -59,7 +59,7 @@
                                     <action selector="buttonStartTouch:" destination="MLR-sF-XLc" eventType="touchUpInside" id="1wf-Sx-rRW"/>
                                 </connections>
                             </button>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" text="30.0" borderStyle="roundedRect" textAlignment="center" minimumFontSize="50" translatesAutoresizingMaskIntoConstraints="NO" id="sI7-Bt-8d7" userLabel="tfTimer">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" text="30.0" borderStyle="roundedRect" textAlignment="center" adjustsFontSizeToFit="NO" minimumFontSize="50" translatesAutoresizingMaskIntoConstraints="NO" id="sI7-Bt-8d7" userLabel="tfTimer">
                                 <rect key="frame" x="-25" y="-30" width="97" height="30"/>
                                 <color key="backgroundColor" red="0.61586442261822705" green="0.89524269104003906" blue="0.70907287355925908" alpha="1" colorSpace="calibratedRGB"/>
                                 <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>

@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="7hg-ur-RMZ">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+    </dependencies>
+    <scenes>
+        <!--SwiftGif-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Project03_BrowseImageGif" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="SwiftGif" id="Uim-ul-0tT"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1233" y="30"/>
+        </scene>
+        <!--YLGIFImage-Swift-->
+        <scene sceneID="8tY-xm-gsA">
+            <objects>
+                <viewController id="LIi-d7-Yxx" customClass="PlayGifViewController" customModule="Project03_BrowseImageGif" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="H3R-yO-yfC"/>
+                        <viewControllerLayoutGuide type="bottom" id="C59-Dw-f1z"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="vII-kd-6Sn">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J1S-Da-x7x">
+                                <rect key="frame" x="8" y="493" width="584" height="50"/>
+                                <color key="backgroundColor" red="0.57702870691890107" green="0.73073046405475695" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="S15-C6-Mgd"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="buttonPlayTouch:" destination="LIi-d7-Yxx" eventType="touchUpInside" id="LxK-Ym-S96"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="CKq-Uk-OAb" customClass="YLImageView" customModule="Project03_BrowseImageGif" customModuleProvider="target">
+                                <rect key="frame" x="8" y="28" width="584" height="457"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="CKq-Uk-OAb" secondAttribute="trailing" constant="8" id="8PH-th-3sB"/>
+                            <constraint firstAttribute="trailing" secondItem="J1S-Da-x7x" secondAttribute="trailing" constant="8" id="BDG-a8-GoI"/>
+                            <constraint firstItem="CKq-Uk-OAb" firstAttribute="top" secondItem="H3R-yO-yfC" secondAttribute="bottom" constant="8" id="Dh0-ac-rIK"/>
+                            <constraint firstItem="CKq-Uk-OAb" firstAttribute="leading" secondItem="vII-kd-6Sn" secondAttribute="leading" constant="8" id="NZP-pZ-eSf"/>
+                            <constraint firstItem="J1S-Da-x7x" firstAttribute="leading" secondItem="vII-kd-6Sn" secondAttribute="leading" constant="8" id="iAc-CQ-og8"/>
+                            <constraint firstItem="J1S-Da-x7x" firstAttribute="top" secondItem="CKq-Uk-OAb" secondAttribute="bottom" constant="8" id="pRu-uo-fKx"/>
+                            <constraint firstItem="C59-Dw-f1z" firstAttribute="top" secondItem="J1S-Da-x7x" secondAttribute="bottom" constant="8" id="qYM-j6-MkG"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="YLGIFImage-Swift" id="ZiV-Fo-l7R"/>
+                    <connections>
+                        <outlet property="buttonPlay" destination="J1S-Da-x7x" id="E8V-Lk-eGP"/>
+                        <outlet property="imageViewPlayGif" destination="CKq-Uk-OAb" id="nj2-rO-OLj"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Mdl-jR-c26" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1233" y="702"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="u1t-jH-TVf">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="7hg-ur-RMZ" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="xBZ-Eq-Dgk">
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="RQU-9E-Ryq"/>
+                        <segue destination="LIi-d7-Yxx" kind="relationship" relationship="viewControllers" id="qIc-Yx-GJh"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0bn-bb-P1G" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="379" y="339"/>
+        </scene>
+    </scenes>
+</document>

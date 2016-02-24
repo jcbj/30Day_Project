@@ -8,20 +8,23 @@
 
 /* Begin PBXBuildFile section */
 		49ED8A641C7CB15C0091C84C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49ED8A631C7CB15C0091C84C /* AppDelegate.swift */; };
-		49ED8A661C7CB15C0091C84C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49ED8A651C7CB15C0091C84C /* ViewController.swift */; };
 		49ED8A691C7CB15C0091C84C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 49ED8A671C7CB15C0091C84C /* Main.storyboard */; };
 		49ED8A6B1C7CB15C0091C84C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 49ED8A6A1C7CB15C0091C84C /* Assets.xcassets */; };
 		49ED8A6E1C7CB15C0091C84C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 49ED8A6C1C7CB15C0091C84C /* LaunchScreen.storyboard */; };
+		49ED8A791C7D17B30091C84C /* FontTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49ED8A781C7D17B30091C84C /* FontTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		49ED8A601C7CB15C0091C84C /* Project02_CustomFont.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Project02_CustomFont.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		49ED8A631C7CB15C0091C84C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		49ED8A651C7CB15C0091C84C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		49ED8A681C7CB15C0091C84C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		49ED8A6A1C7CB15C0091C84C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		49ED8A6D1C7CB15C0091C84C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		49ED8A6F1C7CB15C0091C84C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		49ED8A751C7CB2C60091C84C /* MFJinHei_Noncommercial-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "MFJinHei_Noncommercial-Regular.ttf"; sourceTree = "<group>"; };
+		49ED8A761C7CB2C60091C84C /* MFTongXin_Noncommercial-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "MFTongXin_Noncommercial-Regular.ttf"; sourceTree = "<group>"; };
+		49ED8A771C7CB2C60091C84C /* MFZhiHei_Noncommercial-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "MFZhiHei_Noncommercial-Regular.ttf"; sourceTree = "<group>"; };
+		49ED8A781C7D17B30091C84C /* FontTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FontTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,11 +58,14 @@
 			isa = PBXGroup;
 			children = (
 				49ED8A631C7CB15C0091C84C /* AppDelegate.swift */,
-				49ED8A651C7CB15C0091C84C /* ViewController.swift */,
 				49ED8A671C7CB15C0091C84C /* Main.storyboard */,
 				49ED8A6A1C7CB15C0091C84C /* Assets.xcassets */,
 				49ED8A6C1C7CB15C0091C84C /* LaunchScreen.storyboard */,
+				49ED8A751C7CB2C60091C84C /* MFJinHei_Noncommercial-Regular.ttf */,
+				49ED8A761C7CB2C60091C84C /* MFTongXin_Noncommercial-Regular.ttf */,
+				49ED8A771C7CB2C60091C84C /* MFZhiHei_Noncommercial-Regular.ttf */,
 				49ED8A6F1C7CB15C0091C84C /* Info.plist */,
+				49ED8A781C7D17B30091C84C /* FontTableViewController.swift */,
 			);
 			path = Project02_CustomFont;
 			sourceTree = "<group>";
@@ -135,7 +141,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				49ED8A661C7CB15C0091C84C /* ViewController.swift in Sources */,
+				49ED8A791C7D17B30091C84C /* FontTableViewController.swift in Sources */,
 				49ED8A641C7CB15C0091C84C /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -53,7 +53,7 @@ class PlayViewController: UIViewController {
 //        }
 //        let url = NSURL(fileURLWithPath: videoPath!)
         
-        let url = NSBundle.mainBundle().URLForResource("VID_20150319_081308", withExtension: "mp4")!
+        let url = NSBundle.mainBundle().URLForResource("emoji zone", withExtension: "mp4")!
         
         //实例化
         let player = AVPlayer(URL:url)

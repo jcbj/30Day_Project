@@ -10,3 +10,6 @@
 
 ###Project03_BrowseImageGif
 >[Swift - GIF动态图片的播放（分别使用SwiftGif和YLGIFImage-Swift)](http://www.hangge.com/blog/cache/detail_1060.html)
+
+###Project04_PlayLocalVideo
+>AVPlayer,AVPlayerViewController播放本地音视频

@@ -13,8 +13,6 @@
 		495A800D1C7E0454000207F8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 495A800B1C7E0454000207F8 /* LaunchScreen.storyboard */; };
 		495A80151C7F3068000207F8 /* PlayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 495A80141C7F3068000207F8 /* PlayViewController.swift */; };
 		495A80181C7F36D1000207F8 /* emoji zone.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 495A80171C7F36D1000207F8 /* emoji zone.mp4 */; };
-		495A801A1C7F36EB000207F8 /* TestiMovie.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 495A80191C7F36EB000207F8 /* TestiMovie.mp4 */; };
-		495A801C1C7F385A000207F8 /* VID_20150319_081308.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 495A801B1C7F385A000207F8 /* VID_20150319_081308.mp4 */; };
 		495A801E1C7F3A4F000207F8 /* 红豆.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 495A801D1C7F3A4F000207F8 /* 红豆.mp3 */; };
 /* End PBXBuildFile section */
 
@@ -27,8 +25,6 @@
 		495A800E1C7E0454000207F8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		495A80141C7F3068000207F8 /* PlayViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayViewController.swift; sourceTree = "<group>"; };
 		495A80171C7F36D1000207F8 /* emoji zone.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "emoji zone.mp4"; sourceTree = "<group>"; };
-		495A80191C7F36EB000207F8 /* TestiMovie.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = TestiMovie.mp4; sourceTree = "<group>"; };
-		495A801B1C7F385A000207F8 /* VID_20150319_081308.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = VID_20150319_081308.mp4; sourceTree = "<group>"; };
 		495A801D1C7F3A4F000207F8 /* 红豆.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "红豆.mp3"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -69,8 +65,6 @@
 				495A800B1C7E0454000207F8 /* LaunchScreen.storyboard */,
 				495A80171C7F36D1000207F8 /* emoji zone.mp4 */,
 				495A800E1C7E0454000207F8 /* Info.plist */,
-				495A80191C7F36EB000207F8 /* TestiMovie.mp4 */,
-				495A801B1C7F385A000207F8 /* VID_20150319_081308.mp4 */,
 				495A801D1C7F3A4F000207F8 /* 红豆.mp3 */,
 			);
 			path = Project04_PlayLocalVideo;
@@ -135,11 +129,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				495A801E1C7F3A4F000207F8 /* 红豆.mp3 in Resources */,
-				495A801C1C7F385A000207F8 /* VID_20150319_081308.mp4 in Resources */,
 				495A800D1C7E0454000207F8 /* LaunchScreen.storyboard in Resources */,
 				495A80181C7F36D1000207F8 /* emoji zone.mp4 in Resources */,
 				495A800A1C7E0454000207F8 /* Assets.xcassets in Resources */,
-				495A801A1C7F36EB000207F8 /* TestiMovie.mp4 in Resources */,
 				495A80081C7E0454000207F8 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

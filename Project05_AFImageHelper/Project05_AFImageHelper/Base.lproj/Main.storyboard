@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Project05_AFImageHelper" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -15,11 +16,34 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="IA0-IV-FPL" userLabel="Image View 1">
+                                <rect key="frame" x="8" y="28" width="584" height="278"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="m9n-DG-Jhi" userLabel="Image View 2">
+                                <rect key="frame" x="8" y="314" width="584" height="278"/>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="m9n-DG-Jhi" secondAttribute="trailing" constant="8" id="Jf2-Vt-Ecf"/>
+                            <constraint firstItem="m9n-DG-Jhi" firstAttribute="top" secondItem="IA0-IV-FPL" secondAttribute="bottom" constant="8" id="Yjy-c7-9Ii"/>
+                            <constraint firstItem="IA0-IV-FPL" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="bTg-V4-d62"/>
+                            <constraint firstItem="m9n-DG-Jhi" firstAttribute="height" secondItem="IA0-IV-FPL" secondAttribute="height" id="iTd-3P-CQY"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="m9n-DG-Jhi" secondAttribute="bottom" constant="8" id="ojX-Bd-P0R"/>
+                            <constraint firstAttribute="trailing" secondItem="IA0-IV-FPL" secondAttribute="trailing" constant="8" id="wAm-EW-j9M"/>
+                            <constraint firstItem="m9n-DG-Jhi" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="8" id="xIe-dJ-LUo"/>
+                            <constraint firstItem="IA0-IV-FPL" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="8" id="ymC-Rw-lU1"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="imageViewBase" destination="IA0-IV-FPL" id="Rt0-Vd-Y1E"/>
+                        <outlet property="imageViewBase2" destination="m9n-DG-Jhi" id="orh-Wh-9RY"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="250" y="267"/>
         </scene>
     </scenes>
 </document>

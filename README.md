@@ -13,3 +13,6 @@
 
 ###Project04_PlayLocalVideo
 >AVPlayer,AVPlayerViewController播放本地音视频
+
+###Project05_AFImageHelper
+>[图片处理库AFImageHelper详解(扩展UIImage,UIImageView)](http://www.hangge.com/blog/cache/detail_975.html)

@@ -16,3 +16,7 @@
 
 ###Project05_AFImageHelper
 >[图片处理库AFImageHelper详解(扩展UIImage,UIImageView)](http://www.hangge.com/blog/cache/detail_975.html)
+
+###Project06_PSCarouselView
+>图片轮播控件：UICollectionView,SDWebImage
+

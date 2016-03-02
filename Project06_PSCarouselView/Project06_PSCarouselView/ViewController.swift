@@ -11,14 +11,10 @@ import SDWebImage
 
 class ViewController: UIViewController {
 
-    @IBOutlet weak var imageViewTest: UIImageView!
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
     
-        let url = NSURL(string: "http://www.hangge.com/blog/images/logo.png")
-        self.imageViewTest.sd_setImageWithURL(url, placeholderImage: UIImage(named: "loading"))
     }
 
     override func didReceiveMemoryWarning() {

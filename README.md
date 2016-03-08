@@ -20,3 +20,5 @@
 ###Project06_PSCarouselView
 >图片轮播控件：UICollectionView,SDWebImage
 
+###对照[《The Swift Programming Language (Swift 2.2)》](https://developer.apple.com/library/prerelease/ios/documentation/Swift/Conceptual/Swift_Programming_Language/index.html#//apple_ref/doc/uid/TP40014097-CH3-ID0)巩固相应知识点
+

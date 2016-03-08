@@ -1,18 +1,35 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="PSCarouseCollectionCell" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="PSCarouseCollectionCell" customModule="Project06_PSCarouselView" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="227" height="143"/>
             <autoresizingMask key="autoresizingMask"/>
             <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                <rect key="frame" x="0.0" y="0.0" width="227" height="143"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="CB0-GB-hsw">
+                        <rect key="frame" x="0.0" y="0.0" width="227" height="143"/>
+                    </imageView>
+                </subviews>
                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
             </view>
+            <constraints>
+                <constraint firstItem="CB0-GB-hsw" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="8aV-Uo-ptW"/>
+                <constraint firstItem="CB0-GB-hsw" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="G54-0N-BXZ"/>
+                <constraint firstAttribute="bottom" secondItem="CB0-GB-hsw" secondAttribute="bottom" id="lWd-uE-XEn"/>
+                <constraint firstAttribute="trailing" secondItem="CB0-GB-hsw" secondAttribute="trailing" id="nzC-x4-MMa"/>
+            </constraints>
+            <size key="customSize" width="227" height="143"/>
+            <connections>
+                <outlet property="adImageView" destination="CB0-GB-hsw" id="E9F-qB-0iv"/>
+            </connections>
+            <point key="canvasLocation" x="286.5" y="368.5"/>
         </collectionViewCell>
     </objects>
 </document>

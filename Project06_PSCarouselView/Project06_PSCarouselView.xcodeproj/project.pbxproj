@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		492A3A0A1C8870A700C29FE3 /* PSCarouseCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 492A3A081C8870A700C29FE3 /* PSCarouseCollectionCell.swift */; };
+		492A3A0B1C8870A700C29FE3 /* PSCarouseCollectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 492A3A091C8870A700C29FE3 /* PSCarouseCollectionCell.xib */; };
+		492A3A0D1C88726600C29FE3 /* PSCarouselView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 492A3A0C1C88726600C29FE3 /* PSCarouselView.swift */; };
 		495130061C85E34900C52738 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 495130051C85E34900C52738 /* AppDelegate.swift */; };
 		495130081C85E34900C52738 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 495130071C85E34900C52738 /* ViewController.swift */; };
 		4951300B1C85E34900C52738 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 495130091C85E34900C52738 /* Main.storyboard */; };
@@ -17,6 +20,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		492A3A081C8870A700C29FE3 /* PSCarouseCollectionCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PSCarouseCollectionCell.swift; sourceTree = "<group>"; };
+		492A3A091C8870A700C29FE3 /* PSCarouseCollectionCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PSCarouseCollectionCell.xib; sourceTree = "<group>"; };
+		492A3A0C1C88726600C29FE3 /* PSCarouselView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PSCarouselView.swift; sourceTree = "<group>"; };
 		495130021C85E34900C52738 /* Project06_PSCarouselView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Project06_PSCarouselView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		495130051C85E34900C52738 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		495130071C85E34900C52738 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -70,6 +76,9 @@
 				4951300E1C85E34A00C52738 /* LaunchScreen.storyboard */,
 				495130111C85E34A00C52738 /* Info.plist */,
 				49E171481C85ED5400F5141A /* loading.png */,
+				492A3A081C8870A700C29FE3 /* PSCarouseCollectionCell.swift */,
+				492A3A091C8870A700C29FE3 /* PSCarouseCollectionCell.xib */,
+				492A3A0C1C88726600C29FE3 /* PSCarouselView.swift */,
 			);
 			path = Project06_PSCarouselView;
 			sourceTree = "<group>";
@@ -152,6 +161,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				492A3A0B1C8870A700C29FE3 /* PSCarouseCollectionCell.xib in Resources */,
 				49E171491C85ED5400F5141A /* loading.png in Resources */,
 				495130101C85E34A00C52738 /* LaunchScreen.storyboard in Resources */,
 				4951300D1C85E34900C52738 /* Assets.xcassets in Resources */,
@@ -215,7 +225,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				495130081C85E34900C52738 /* ViewController.swift in Sources */,
+				492A3A0A1C8870A700C29FE3 /* PSCarouseCollectionCell.swift in Sources */,
 				495130061C85E34900C52738 /* AppDelegate.swift in Sources */,
+				492A3A0D1C88726600C29FE3 /* PSCarouselView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

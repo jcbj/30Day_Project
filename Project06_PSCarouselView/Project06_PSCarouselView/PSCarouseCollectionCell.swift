@@ -10,6 +10,7 @@ import UIKit
 
 class PSCarouseCollectionCell: UICollectionViewCell {
 
+    @IBOutlet weak var adImageView: UIImageView!
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
